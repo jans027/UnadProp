@@ -1,0 +1,14 @@
+# Valor de la cuenta
+valor_cuenta = float(input("Ingrese el valor de la cuenta: "))
+
+# Calcular la propina
+if valor_cuenta <= 50000:
+    propina = valor_cuenta * 0.10  # 10% de propina
+else:
+    propina = valor_cuenta * 0.05  # 5% de propina
+
+# Valor de la propina sugerida
+print(f"Propina sugerida: ${propina:,.2f}")
+
+# Total con propina
+print(f"Valor total con propina: ${valor_cuenta + propina:,.2f}")  # Redondear a dos dec
