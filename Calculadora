@@ -1,0 +1,44 @@
+print("Calculadora Básica")
+print("Operaciones disponibles:")
+print("1.Suma")
+print("2.Resta")
+print("3.Multiplicación")
+print("4.División")
+
+def formatear_numero(num):
+    """Formatea el número para quitar .0 si es entero"""
+    return int(num) if num.is_integer() else num
+
+operacion = input("Ingrese la operacion requerida (1/2/3/4): ")
+num1 = float(input("Ingrese el primer número: "))
+num2 = float(input("Ingrese el segundo número: "))
+
+if operacion in ('1'):
+    resultado = num1 + num2
+    num1_fmt = formatear_numero(num1)
+    num2_fmt = formatear_numero(num2)
+    res_fmt = formatear_numero(resultado)
+    print(f"{num1_fmt} + {num2_fmt} = {res_fmt}")
+elif operacion in ('2'):
+    resultado = num1 - num2
+    num1_fmt = formatear_numero(num1)
+    num2_fmt = formatear_numero(num2)
+    res_fmt = formatear_numero(resultado)
+    print(f"{num1_fmt} - {num2_fmt} = {res_fmt}")
+elif operacion in ('3'):
+    resultado = num1 * num2
+    num1_fmt = formatear_numero(num1)
+    num2_fmt = formatear_numero(num2)
+    res_fmt = formatear_numero(resultado)
+    print(f"{num1_fmt} * {num2_fmt} = {res_fmt}")
+elif operacion in ('4'):
+    if num2 != 0:
+        resultado = num1 / num2
+        num1_fmt = formatear_numero(num1)
+        num2_fmt = formatear_numero(num2)
+        res_fmt = formatear_numero(resultado)
+        print(f"{num1_fmt} / {num2_fmt} = {res_fmt}")
+    else:
+        print("¡Error! No se puede dividir entre cero.")
+else:
+    print("Operación no válida")

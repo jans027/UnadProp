@@ -1,0 +1,13 @@
+print("Diagnóstico de Niveles de Glucosa")
+nivel_glucosa = float(input("Ingrese su nivel de glucosa en ayunas (mg/dL): "))
+
+if nivel_glucosa <= 65:
+    print(f"{nivel_glucosa} mg/dL → HIPOGLUCEMIA")
+else:
+    if nivel_glucosa < 100:
+        print(f"{nivel_glucosa} mg/dL → NORMAL")
+    else:
+        if nivel_glucosa <= 110:
+            print(f"{nivel_glucosa} mg/dL → PREDIABETES")
+        else:
+            print(f"{nivel_glucosa} mg/dL → DIABETES")
