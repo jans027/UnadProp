@@ -1,0 +1,20 @@
+print("Sistema de Validación de Temporada por Temperatura")
+
+def formatear_temperatura(temp):
+    """Convierte a entero si no tiene decimales"""
+    return int(temp) if temp == int(temp) else temp
+
+try:
+    temperatura = float(input("\nIngrese la temperatura en grados Celsius: "))
+    temp_formateada = formatear_temperatura(temperatura)
+    
+    if temperatura <= 6:
+        print(f"\n{temp_formateada}°C → TEMPORADA DE HELADAS")
+    else:
+        if temperatura <= 12:
+            print(f"\n{temp_formateada}°C → TEMPORADA PRÓXIMA A HELADAS")
+        else:
+            print(f"\n{temp_formateada}°C → NO HAY TEMPORADA DE HELADAS")
+            
+except ValueError:
+    print("\nError: Por favor ingrese un valor numérico válido")

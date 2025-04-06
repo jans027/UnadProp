@@ -27,7 +27,7 @@ MAYOR A 110 ML DIABETES
 Nota. Esta tabla muestra el nivel de glucosa para determinar el criterio 
 Médico.
 
-5_Los investigadores de la escuela ECAPMA de la UNAD están desarrollando 
+4_Los investigadores de la escuela ECAPMA de la UNAD están desarrollando 
 un estudio para verificar si existe temporada de heladas en sabana de 
 Bogotá y le han solicitado su ayuda para la construcción de un programa
 que valide la temporada acorde a la temperatura así:
